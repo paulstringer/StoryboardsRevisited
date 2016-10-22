@@ -71,7 +71,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="ViewController1" id="DAp-pi-cPx">
                         <barButtonItem key="backBarButtonItem" title="Back" id="tgS-xX-ED7"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="Xg4-d4-4rx"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Td1-Tt-GMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,7 +98,7 @@
         <!--Demos-->
         <scene sceneID="Ffc-ch-MI8">
             <objects>
-                <tableViewController id="DJG-7v-c6u" sceneMemberID="viewController">
+                <tableViewController id="DJG-7v-c6u" customClass="IndexViewController" customModule="ScreenPlayDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qch-oJ-1VZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,17 +207,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baX-7Y-zan" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="-721"/>
+            <point key="canvasLocation" x="1458" y="-693"/>
         </scene>
         <!--ViewController2-->
         <scene sceneID="lZD-Fc-cLe">
             <objects>
                 <viewController id="tep-p0-DZh" customClass="ViewController2" customModule="ScreenPlayDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hXK-5p-r1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="MPb-s9-Ra0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CyZ-U3-S7C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBV-aK-dOh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBV-aK-dOh">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -231,6 +234,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="ViewController2" id="vpT-dx-SCw"/>
+                    <connections>
+                        <outlet property="label" destination="SBV-aK-dOh" id="yVl-c1-rSB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n8N-TR-UPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,6 +244,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qZz-HR-C0B"/>
+        <segue reference="YHW-29-dpC"/>
     </inferredMetricsTieBreakers>
 </document>

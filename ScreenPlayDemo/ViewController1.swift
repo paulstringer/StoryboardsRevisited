@@ -7,12 +7,15 @@ class ViewController1: UIViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
     switch segue.identifier! {
+      
     case "ShowNext":
       let destination = segue.destination as! ViewController2
-      destination.dataSource = ViewController2DataSource(value: "ViewController1 -> ViewController2")
+      destination.dataSource = ViewController2DataSource(labelText: dataSource.sharedDataSource.value)
+      
     case "ShowShared":
       let destination = segue.destination as! SharedViewController
-      destination.dataSource = SharedViewControllerDataSource(value: "ViewController1 -> SharedViewController")  
+      destination.dataSource = dataSource.sharedDataSource
+      
     default:
       return
     }
@@ -20,7 +23,9 @@ class ViewController1: UIViewController {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    print(dataSource.value)
+    
+    print(dataSource.sharedDataSource.value)
+    
   }
 
 }

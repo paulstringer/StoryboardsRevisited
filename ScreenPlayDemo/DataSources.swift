@@ -1,19 +1,26 @@
 import Foundation
 
-struct ViewController1DataSource {
+struct ViewController0DataSource {
   
-  let value: String
-
+  let sharedDataSource: SharedViewControllerDataSource
+  
 }
 
-struct ViewController2DataSource {
-  
-  let value: String
-  
+struct ViewController1DataSource {
+
+  let sharedDataSource: SharedViewControllerDataSource
+
 }
 
 struct SharedViewControllerDataSource {
   
   let value: String
+  
+}
 
+
+struct ViewController2DataSource {
+  
+  let labelText: String
+  
 }

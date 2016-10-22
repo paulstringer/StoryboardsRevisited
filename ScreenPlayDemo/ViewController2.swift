@@ -4,8 +4,12 @@ class ViewController2: UIViewController {
   
   var dataSource: ViewController2DataSource!
   
+  @IBOutlet weak var label: UILabel!
+  
   override func viewWillAppear(_ animated: Bool) {
-    print(dataSource.value)
+    
+    label.text = dataSource.labelText
+    
   }
 
 }

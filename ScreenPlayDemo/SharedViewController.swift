@@ -8,11 +8,12 @@ class SharedViewController: UIViewController {
     switch segue.identifier! {
     case "EmbedNext":
       let destination = segue.destination as! ViewController2
-      destination.dataSource = ViewController2DataSource(value: "SharedViewController -> ViewController2")
+      destination.dataSource = ViewController2DataSource(labelText: dataSource.value)
     default:
       return
     }
   }
+  
   override func viewWillAppear(_ animated: Bool) {
     print(dataSource.value)
   }

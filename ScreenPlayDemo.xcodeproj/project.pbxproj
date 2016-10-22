@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8CBED28D1DBA0F1200BC60BA /* App Supporting Files */,
-				8CBED28E1DBA0F1E00BC60BA /* Onboarding */,
+				8CBED28E1DBA0F1E00BC60BA /* Demo */,
 			);
 			path = ScreenPlayDemo;
 			sourceTree = "<group>";
@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				8CBED2791DBA0EC000BC60BA /* AppDelegate.swift */,
-				8CBED27D1DBA0EC000BC60BA /* Main.storyboard */,
 				8CBED2801DBA0EC000BC60BA /* Assets.xcassets */,
 				8CBED2821DBA0EC000BC60BA /* LaunchScreen.storyboard */,
 				8CBED2851DBA0EC000BC60BA /* Info.plist */,
@@ -82,17 +81,18 @@
 			name = "App Supporting Files";
 			sourceTree = "<group>";
 		};
-		8CBED28E1DBA0F1E00BC60BA /* Onboarding */ = {
+		8CBED28E1DBA0F1E00BC60BA /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8CBED2911DBA126B00BC60BA /* DataSources.swift */,
+				8CBED27D1DBA0EC000BC60BA /* Main.storyboard */,
 				8CBED2971DBBB5C700BC60BA /* IndexViewController.swift */,
+				8CBED2951DBBA50300BC60BA /* SharedViewController.swift */,
 				8CBED27B1DBA0EC000BC60BA /* ViewController0.swift */,
 				8CBED28B1DBA0EFE00BC60BA /* ViewController1.swift */,
 				8CBED28F1DBA112700BC60BA /* ViewController2.swift */,
-				8CBED2951DBBA50300BC60BA /* SharedViewController.swift */,
+				8CBED2911DBA126B00BC60BA /* DataSources.swift */,
 			);
-			name = Onboarding;
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
