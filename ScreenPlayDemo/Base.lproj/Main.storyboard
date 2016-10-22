@@ -143,9 +143,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ZuG-MW-A5Y" kind="show" id="y5I-ig-aO9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -241,7 +238,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y5I-ig-aO9"/>
         <segue reference="qZz-HR-C0B"/>
     </inferredMetricsTieBreakers>
 </document>

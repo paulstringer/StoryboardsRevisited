@@ -15,7 +15,8 @@
 		8CBED28C1DBA0EFE00BC60BA /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED28B1DBA0EFE00BC60BA /* ViewController1.swift */; };
 		8CBED2901DBA112700BC60BA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED28F1DBA112700BC60BA /* ViewController2.swift */; };
 		8CBED2921DBA126B00BC60BA /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED2911DBA126B00BC60BA /* DataSources.swift */; };
-		8CBED2961DBBA50300BC60BA /* SharedViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED2951DBBA50300BC60BA /* SharedViewController0.swift */; };
+		8CBED2961DBBA50300BC60BA /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED2951DBBA50300BC60BA /* SharedViewController.swift */; };
+		8CBED2981DBBB5C700BC60BA /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBED2971DBBB5C700BC60BA /* IndexViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		8CBED28B1DBA0EFE00BC60BA /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		8CBED28F1DBA112700BC60BA /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		8CBED2911DBA126B00BC60BA /* DataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
-		8CBED2951DBBA50300BC60BA /* SharedViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController0.swift; sourceTree = "<group>"; };
+		8CBED2951DBBA50300BC60BA /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		8CBED2971DBBB5C700BC60BA /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				8CBED2911DBA126B00BC60BA /* DataSources.swift */,
+				8CBED2971DBBB5C700BC60BA /* IndexViewController.swift */,
 				8CBED27B1DBA0EC000BC60BA /* ViewController0.swift */,
 				8CBED28B1DBA0EFE00BC60BA /* ViewController1.swift */,
 				8CBED28F1DBA112700BC60BA /* ViewController2.swift */,
-				8CBED2951DBBA50300BC60BA /* SharedViewController0.swift */,
+				8CBED2951DBBA50300BC60BA /* SharedViewController.swift */,
 			);
 			name = Onboarding;
 			sourceTree = "<group>";
@@ -170,7 +173,8 @@
 				8CBED2901DBA112700BC60BA /* ViewController2.swift in Sources */,
 				8CBED27C1DBA0EC000BC60BA /* ViewController0.swift in Sources */,
 				8CBED27A1DBA0EC000BC60BA /* AppDelegate.swift in Sources */,
-				8CBED2961DBBA50300BC60BA /* SharedViewController0.swift in Sources */,
+				8CBED2981DBBB5C700BC60BA /* IndexViewController.swift in Sources */,
+				8CBED2961DBBA50300BC60BA /* SharedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
