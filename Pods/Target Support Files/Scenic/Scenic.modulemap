@@ -1,0 +1,6 @@
+framework module Scenic {
+  umbrella header "Scenic-umbrella.h"
+
+  export *
+  module * { export * }
+}

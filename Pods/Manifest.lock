@@ -1,0 +1,16 @@
+PODS:
+  - Scenic (0.1.0)
+
+DEPENDENCIES:
+  - Scenic (from `../Scenic`)
+
+EXTERNAL SOURCES:
+  Scenic:
+    :path: ../Scenic
+
+SPEC CHECKSUMS:
+  Scenic: 1f126670eca5d1b04a7803ee992744f7de0da4ed
+
+PODFILE CHECKSUM: daa9aa2fcc35eead748d852e4e503aeb52888c73
+
+COCOAPODS: 1.1.0.beta.2

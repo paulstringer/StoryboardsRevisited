@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9D8DF1A9ECD22752A011729CE10CBDEC67FE4FBA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9D8DF1A9ECD22752A011729CE10CBDEC67FE4FBA" : 9223372036854775807,
+    "CBC89680D17EE30061B0CBCC41738EE086BFF846" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4EAC2E51-D6CE-4565-8982-D7076B73D9BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9D8DF1A9ECD22752A011729CE10CBDEC67FE4FBA" : "StoryboardsRevisited\/",
+    "CBC89680D17EE30061B0CBCC41738EE086BFF846" : "Scenic\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CoffeeVisit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CoffeeVisit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:paulstringer\/StoryboardsRevisited.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D8DF1A9ECD22752A011729CE10CBDEC67FE4FBA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:paulstringer\/Scenic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CBC89680D17EE30061B0CBCC41738EE086BFF846"
+    }
+  ]
+}

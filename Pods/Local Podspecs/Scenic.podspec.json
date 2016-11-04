@@ -1,0 +1,22 @@
+{
+  "name": "Scenic",
+  "version": "0.1.0",
+  "summary": "A short description of Scenic.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Scenic",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Paul Stringer": "paulstringer@mac.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Scenic.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Scenic/Classes/**/*"
+}

@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D9BED2565760D0737688DEF769A7BAD /* Pods-CoffeeVisit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FB4457E904971F6734F4167E22E7 /* Pods-CoffeeVisit-dummy.m */; };
+		212EA9682CC6A4DB8034C2BB94388261 /* StoryboardContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */; };
+		2BE2281668C52C122892C1EE46B9B7DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		398717413E6B87AE5167469D7FE034DE /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9293AC2DB79EDB58E2C484C779C93FA /* StoryboardViewController.swift */; };
+		42CEFC16D52ABFA45DD4732C52AEC0CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5C416AC9CDB7440CAE0D92179E97FCFD /* StoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACF26A2121A40CEE14A08A91EEA054A /* StoryboardController.swift */; };
+		7FA7A1BB4164E39DB8E2DB99E3041C5A /* Pods-CoffeeVisit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9520FB3B4EBF54165E4D2849B332F5E9 /* Pods-CoffeeVisit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAEEA8A50A83F1CCCEA5771DCA2ED000 /* Scenic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C4D742397A0E36EBD9D0DD8A46ACF1 /* Scenic-dummy.m */; };
+		F1AF3AEB30DA0055CCCBE009914692CE /* Scenic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 152D02D2507BE56AEF51627796A0DD7B /* Scenic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEF9EBECFC350B91994B3EB386EBF907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26CDFC17108CC2959A5BF512677C37C8;
+			remoteInfo = Scenic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CF8083850F9966430F69FD4160C56E0 /* Scenic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Scenic.xcconfig; sourceTree = "<group>"; };
+		152D02D2507BE56AEF51627796A0DD7B /* Scenic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Scenic-umbrella.h"; sourceTree = "<group>"; };
+		249B13A256EF910AF449805FA07CC6E6 /* Scenic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Scenic-prefix.pch"; sourceTree = "<group>"; };
+		2ACF26A2121A40CEE14A08A91EEA054A /* StoryboardController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
+		38B50132377F6204C29D7AC564FEB678 /* Scenic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryboardContext.swift; sourceTree = "<group>"; };
+		669660A76EF407AE2111710A9B2910D6 /* Pods-CoffeeVisit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoffeeVisit-acknowledgements.plist"; sourceTree = "<group>"; };
+		740671ED17875706B745A802913970CF /* Pods-CoffeeVisit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoffeeVisit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87475C42FF6D85CB0047928D40B4E895 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF2FB4457E904971F6734F4167E22E7 /* Pods-CoffeeVisit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoffeeVisit-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9520FB3B4EBF54165E4D2849B332F5E9 /* Pods-CoffeeVisit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoffeeVisit-umbrella.h"; sourceTree = "<group>"; };
+		A24238E1057A23C4BF75F0A42D22CEDE /* Pods_CoffeeVisit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeVisit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC59337B18DB85538E6AAA9905E771C /* Scenic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Scenic.modulemap; sourceTree = "<group>"; };
+		AFBA4944BFED1FE3ED781C5692E85F56 /* Pods-CoffeeVisit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CoffeeVisit.modulemap"; sourceTree = "<group>"; };
+		C9293AC2DB79EDB58E2C484C779C93FA /* StoryboardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3C4D742397A0E36EBD9D0DD8A46ACF1 /* Scenic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Scenic-dummy.m"; sourceTree = "<group>"; };
+		DE0AA00CC29972417CB2BB6C9ACA0905 /* Pods-CoffeeVisit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoffeeVisit-frameworks.sh"; sourceTree = "<group>"; };
+		E0D5CD9593CFEC028BE068C04A68F421 /* Pods-CoffeeVisit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoffeeVisit.release.xcconfig"; sourceTree = "<group>"; };
+		F64578811BB69B61FCB4223E60B86A80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69C168B2C38F7F624150222CA28A3F2 /* Pods-CoffeeVisit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoffeeVisit.debug.xcconfig"; sourceTree = "<group>"; };
+		F6DB2EC3E03DF4C5B69B55D97776BCD6 /* Pods-CoffeeVisit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoffeeVisit-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0191267C545223D06B46BB3BB310A0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BE2281668C52C122892C1EE46B9B7DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E24E78394C4C1AE7AFB15E2ED23E29FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CEFC16D52ABFA45DD4732C52AEC0CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20671E222C8FCFB4793DA1DAC6F619A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */,
+				2ACF26A2121A40CEE14A08A91EEA054A /* StoryboardController.swift */,
+				C9293AC2DB79EDB58E2C484C779C93FA /* StoryboardViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2D65464E7F49AC5A119E2F73A87B0C08 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55C4F39CEACBE6F60D220364FF4E0444 /* Pods-CoffeeVisit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		426F01AFD23A1012ACEE5E3D2830D3F5 /* Scenic */ = {
+			isa = PBXGroup;
+			children = (
+				20671E222C8FCFB4793DA1DAC6F619A9 /* Classes */,
+			);
+			path = Scenic;
+			sourceTree = "<group>";
+		};
+		43FACE7EE2DB5446FDE5EFA6F627CB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A24238E1057A23C4BF75F0A42D22CEDE /* Pods_CoffeeVisit.framework */,
+				38B50132377F6204C29D7AC564FEB678 /* Scenic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55C4F39CEACBE6F60D220364FF4E0444 /* Pods-CoffeeVisit */ = {
+			isa = PBXGroup;
+			children = (
+				F64578811BB69B61FCB4223E60B86A80 /* Info.plist */,
+				AFBA4944BFED1FE3ED781C5692E85F56 /* Pods-CoffeeVisit.modulemap */,
+				740671ED17875706B745A802913970CF /* Pods-CoffeeVisit-acknowledgements.markdown */,
+				669660A76EF407AE2111710A9B2910D6 /* Pods-CoffeeVisit-acknowledgements.plist */,
+				8DF2FB4457E904971F6734F4167E22E7 /* Pods-CoffeeVisit-dummy.m */,
+				DE0AA00CC29972417CB2BB6C9ACA0905 /* Pods-CoffeeVisit-frameworks.sh */,
+				F6DB2EC3E03DF4C5B69B55D97776BCD6 /* Pods-CoffeeVisit-resources.sh */,
+				9520FB3B4EBF54165E4D2849B332F5E9 /* Pods-CoffeeVisit-umbrella.h */,
+				F69C168B2C38F7F624150222CA28A3F2 /* Pods-CoffeeVisit.debug.xcconfig */,
+				E0D5CD9593CFEC028BE068C04A68F421 /* Pods-CoffeeVisit.release.xcconfig */,
+			);
+			name = "Pods-CoffeeVisit";
+			path = "Target Support Files/Pods-CoffeeVisit";
+			sourceTree = "<group>";
+		};
+		5B5E3BE81A4ED41B0E65FF78ED45542E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87475C42FF6D85CB0047928D40B4E895 /* Info.plist */,
+				ACC59337B18DB85538E6AAA9905E771C /* Scenic.modulemap */,
+				0CF8083850F9966430F69FD4160C56E0 /* Scenic.xcconfig */,
+				D3C4D742397A0E36EBD9D0DD8A46ACF1 /* Scenic-dummy.m */,
+				249B13A256EF910AF449805FA07CC6E6 /* Scenic-prefix.pch */,
+				152D02D2507BE56AEF51627796A0DD7B /* Scenic-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../StoryboardsRevisited/Pods/Target Support Files/Scenic";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				AC0174CEDE5FAE1D75A699B084C874C0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				43FACE7EE2DB5446FDE5EFA6F627CB3B /* Products */,
+				2D65464E7F49AC5A119E2F73A87B0C08 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		811EDA3921A00195B573F8356590B7D8 /* Scenic */ = {
+			isa = PBXGroup;
+			children = (
+				426F01AFD23A1012ACEE5E3D2830D3F5 /* Scenic */,
+				5B5E3BE81A4ED41B0E65FF78ED45542E /* Support Files */,
+			);
+			name = Scenic;
+			path = ../../Scenic;
+			sourceTree = "<group>";
+		};
+		AC0174CEDE5FAE1D75A699B084C874C0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				811EDA3921A00195B573F8356590B7D8 /* Scenic */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CAD44DB64301C7F6376A9ECB4D0D0044 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1AF3AEB30DA0055CCCBE009914692CE /* Scenic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61DD163BD6E7B3F8647FD89685EA551 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA7A1BB4164E39DB8E2DB99E3041C5A /* Pods-CoffeeVisit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26CDFC17108CC2959A5BF512677C37C8 /* Scenic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09ED03EC0DDD1AAF3A51D73C6E8B0AE3 /* Build configuration list for PBXNativeTarget "Scenic" */;
+			buildPhases = (
+				E977DE8E5B47AA5507A18C1B6BB1369B /* Sources */,
+				E24E78394C4C1AE7AFB15E2ED23E29FC /* Frameworks */,
+				CAD44DB64301C7F6376A9ECB4D0D0044 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scenic;
+			productName = Scenic;
+			productReference = 38B50132377F6204C29D7AC564FEB678 /* Scenic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E40FAF8CC6378F33CD5BD9734E53605C /* Pods-CoffeeVisit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C2716F4292AD5E91C4B96329186008 /* Build configuration list for PBXNativeTarget "Pods-CoffeeVisit" */;
+			buildPhases = (
+				70E6D9737150D415DAF4E86D8F682774 /* Sources */,
+				0191267C545223D06B46BB3BB310A0A6 /* Frameworks */,
+				D61DD163BD6E7B3F8647FD89685EA551 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B7F32C833BD9A94F06EA26521DCC2CE /* PBXTargetDependency */,
+			);
+			name = "Pods-CoffeeVisit";
+			productName = "Pods-CoffeeVisit";
+			productReference = A24238E1057A23C4BF75F0A42D22CEDE /* Pods_CoffeeVisit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 43FACE7EE2DB5446FDE5EFA6F627CB3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E40FAF8CC6378F33CD5BD9734E53605C /* Pods-CoffeeVisit */,
+				26CDFC17108CC2959A5BF512677C37C8 /* Scenic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70E6D9737150D415DAF4E86D8F682774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9BED2565760D0737688DEF769A7BAD /* Pods-CoffeeVisit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E977DE8E5B47AA5507A18C1B6BB1369B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEEA8A50A83F1CCCEA5771DCA2ED000 /* Scenic-dummy.m in Sources */,
+				212EA9682CC6A4DB8034C2BB94388261 /* StoryboardContext.swift in Sources */,
+				5C416AC9CDB7440CAE0D92179E97FCFD /* StoryboardController.swift in Sources */,
+				398717413E6B87AE5167469D7FE034DE /* StoryboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B7F32C833BD9A94F06EA26521DCC2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Scenic;
+			target = 26CDFC17108CC2959A5BF512677C37C8 /* Scenic */;
+			targetProxy = BEF9EBECFC350B91994B3EB386EBF907 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04018381CEFD992EAF346066F390D627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69C168B2C38F7F624150222CA28A3F2 /* Pods-CoffeeVisit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoffeeVisit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoffeeVisit/Pods-CoffeeVisit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CoffeeVisit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		56F0F2E13B1CD92310D8A0036951465E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF8083850F9966430F69FD4160C56E0 /* Scenic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Scenic/Scenic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Scenic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Scenic/Scenic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Scenic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7C64BF8709A1BFE5833D1A3E4ED4ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D5CD9593CFEC028BE068C04A68F421 /* Pods-CoffeeVisit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CoffeeVisit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoffeeVisit/Pods-CoffeeVisit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CoffeeVisit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D718168891B55FBCDF6EB362FC1E3332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF8083850F9966430F69FD4160C56E0 /* Scenic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Scenic/Scenic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Scenic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Scenic/Scenic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Scenic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09ED03EC0DDD1AAF3A51D73C6E8B0AE3 /* Build configuration list for PBXNativeTarget "Scenic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F0F2E13B1CD92310D8A0036951465E /* Debug */,
+				D718168891B55FBCDF6EB362FC1E3332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C2716F4292AD5E91C4B96329186008 /* Build configuration list for PBXNativeTarget "Pods-CoffeeVisit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04018381CEFD992EAF346066F390D627 /* Debug */,
+				C7C64BF8709A1BFE5833D1A3E4ED4ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
