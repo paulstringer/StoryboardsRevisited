@@ -1,9 +1,10 @@
 import UIKit
+import Scenic
 
-class OrderConfirmationViewController: UIViewController {
+class OrderConfirmationViewController: StoryboardViewController {
   
   override func viewDidLoad() {
-      self.navigationItem.hidesBackButton = true
+      
   }
   
 }

@@ -49,7 +49,7 @@
         <!--Choose Drink-->
         <scene sceneID="0TF-5O-Jab">
             <objects>
-                <tableViewController title="Choose Drink" id="jsJ-Ce-24o" sceneMemberID="viewController">
+                <tableViewController title="Choose Drink" id="jsJ-Ce-24o" customClass="StoryboardTableViewController" customModule="Scenic" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sSS-Tt-GVR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
         <!--Customise Drink-->
         <scene sceneID="Wd3-RA-fV5">
             <objects>
-                <tableViewController title="Customise Drink" id="WNu-Ns-ueD" sceneMemberID="viewController">
+                <tableViewController title="Customise Drink" id="WNu-Ns-ueD" customClass="StoryboardTableViewController" customModule="Scenic" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UIR-Ai-I5F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +250,7 @@
         <!--Confirm Order-->
         <scene sceneID="N5T-5Y-bri">
             <objects>
-                <viewController title="Confirm Order" id="W9L-sC-jUt" sceneMemberID="viewController">
+                <viewController title="Confirm Order" id="W9L-sC-jUt" customClass="StoryboardViewController" customModule="Scenic" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="puo-3A-bOS"/>
                         <viewControllerLayoutGuide type="bottom" id="ZaP-CJ-f9Y"/>
@@ -314,7 +314,7 @@
         <!--Add Ins-->
         <scene sceneID="GWx-Na-bFh">
             <objects>
-                <tableViewController title="Add Ins" id="RO4-nS-k1v" sceneMemberID="viewController">
+                <tableViewController title="Add Ins" id="RO4-nS-k1v" customClass="StoryboardTableViewController" customModule="Scenic" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="K3H-Nn-6E9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -440,7 +440,7 @@
         <!--Size-->
         <scene sceneID="5yp-4a-X6T">
             <objects>
-                <tableViewController title="Size" id="cnP-aM-zgW" sceneMemberID="viewController">
+                <tableViewController title="Size" id="cnP-aM-zgW" customClass="StoryboardTableViewController" customModule="Scenic" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V1l-hl-vvM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -512,10 +512,10 @@
             </objects>
             <point key="canvasLocation" x="4564" y="427"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Storyboard Navigation Controller-->
         <scene sceneID="IKh-mB-0To">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hEf-RL-HyV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hEf-RL-HyV" customClass="StoryboardNavigationController" customModule="Scenic" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C6V-vh-xWw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
