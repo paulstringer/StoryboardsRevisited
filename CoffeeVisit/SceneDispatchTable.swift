@@ -1,5 +1,3 @@
-import Scenic
-
 extension ViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardSceneVisitor) { visitor.prepare(self) }
 }
