@@ -1,9 +1,5 @@
 import Scenic
 
-class CoffeeVisitStoryboardContext: StoryboardContext {
-  
-}
-
 extension ViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardSceneVisitor) { visitor.prepare(self) }
 }

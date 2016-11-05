@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var viewController = firstViewController()
     
-    let context = CoffeeVisitStoryboardContext()
+    //let context = StoryboardContext()
     
-    viewController.storyboardSegueHandler = StoryboardSegueHandler(context: context)
+    viewController.storyboardSegueHandler = StoryboardSegueHandler()
     
   }
   

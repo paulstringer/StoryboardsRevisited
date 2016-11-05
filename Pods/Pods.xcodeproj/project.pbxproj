@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D9BED2565760D0737688DEF769A7BAD /* Pods-CoffeeVisit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FB4457E904971F6734F4167E22E7 /* Pods-CoffeeVisit-dummy.m */; };
-		212EA9682CC6A4DB8034C2BB94388261 /* StoryboardContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */; };
 		2BE2281668C52C122892C1EE46B9B7DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		398717413E6B87AE5167469D7FE034DE /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9293AC2DB79EDB58E2C484C779C93FA /* StoryboardViewController.swift */; };
 		42CEFC16D52ABFA45DD4732C52AEC0CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -34,7 +33,6 @@
 		249B13A256EF910AF449805FA07CC6E6 /* Scenic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Scenic-prefix.pch"; sourceTree = "<group>"; };
 		2ACF26A2121A40CEE14A08A91EEA054A /* StoryboardController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
 		38B50132377F6204C29D7AC564FEB678 /* Scenic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryboardContext.swift; sourceTree = "<group>"; };
 		669660A76EF407AE2111710A9B2910D6 /* Pods-CoffeeVisit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoffeeVisit-acknowledgements.plist"; sourceTree = "<group>"; };
 		740671ED17875706B745A802913970CF /* Pods-CoffeeVisit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoffeeVisit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		87475C42FF6D85CB0047928D40B4E895 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		20671E222C8FCFB4793DA1DAC6F619A9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5C887F004ADDF4B6FBF18D510A8199EC /* StoryboardContext.swift */,
 				2ACF26A2121A40CEE14A08A91EEA054A /* StoryboardController.swift */,
 				C9293AC2DB79EDB58E2C484C779C93FA /* StoryboardViewController.swift */,
 			);
@@ -284,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEEA8A50A83F1CCCEA5771DCA2ED000 /* Scenic-dummy.m in Sources */,
-				212EA9682CC6A4DB8034C2BB94388261 /* StoryboardContext.swift in Sources */,
 				5C416AC9CDB7440CAE0D92179E97FCFD /* StoryboardController.swift in Sources */,
 				398717413E6B87AE5167469D7FE034DE /* StoryboardViewController.swift in Sources */,
 			);
