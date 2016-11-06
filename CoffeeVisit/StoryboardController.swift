@@ -1,5 +1,7 @@
 import UIKit
 
+// TODO: Protocol Orientate This So It Can Be Factored Out and Made More General
+
 public struct StoryboardSegueHandler {
   
   public init() {}
@@ -29,21 +31,24 @@ struct StoryboardController: StoryboardSceneVisitor {
     dispatchVisitorToDestination()
   }
   
-  private func setSegueHandlerOnDestination() {
-    guard var destination = segue.destination as? StoryboardManagedScene else { return }
-    destination.storyboardSegueHandler = StoryboardSegueHandler()
-  }
-  
   private func dispatchVisitorToDestination() {
     guard let destination = segue.destination as? StoryboardVisitableScene else { return }
     destination.accept(visitor: self)
+  }
+  
+  private func setSegueHandlerOnDestination() {
+    guard var destination = segue.destination as? StoryboardManagedScene else { return }
+    destination.storyboardSegueHandler = StoryboardSegueHandler()
   }
   
 }
 
 public protocol StoryboardSceneVisitor {
   
-  // methods that prepare each scene:
+  var segue: UIStoryboardSegue { get }
+  var sender: Any? { get }
+  
+  // This Protocol Provides the Client an Extension Point for Extending With Operations To Visit Each Scene
   
 }
 

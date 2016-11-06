@@ -1,8 +1,6 @@
 import UIKit
 
-// TODO: Protocol Orientate This So It Can Be Factored Out and Made More General
-
-open class StoryboardViewController: UIViewController, StoryboardManagedScene {
+class StoryboardViewController: UIViewController, StoryboardManagedScene {
   
   public var storyboardSegueHandler: StoryboardSegueHandler!
   
@@ -14,7 +12,7 @@ open class StoryboardViewController: UIViewController, StoryboardManagedScene {
   
 }
 
-open class StoryboardNavigationController: UINavigationController, StoryboardManagedScene {
+class StoryboardNavigationController: UINavigationController, StoryboardManagedScene {
   
   public var storyboardSegueHandler: StoryboardSegueHandler! {
     
@@ -36,7 +34,7 @@ open class StoryboardNavigationController: UINavigationController, StoryboardMan
   
 }
 
-open class StoryboardTableViewController: UITableViewController, StoryboardManagedScene {
+class StoryboardTableViewController: UITableViewController, StoryboardManagedScene {
   
   public var storyboardSegueHandler: StoryboardSegueHandler!
   

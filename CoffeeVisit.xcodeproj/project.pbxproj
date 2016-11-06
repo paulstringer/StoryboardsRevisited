@@ -16,6 +16,10 @@
 		8CC4175F1DC3A36900D528A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4175D1DC3A36900D528A7 /* Main.storyboard */; };
 		8CC417611DC3A36900D528A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC417601DC3A36900D528A7 /* Assets.xcassets */; };
 		8CC417641DC3A36900D528A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC417621DC3A36900D528A7 /* LaunchScreen.storyboard */; };
+		8CF360431DCEA92600C70097 /* OrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */; };
+		8CF360451DCEA95F00C70097 /* OrderSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF360441DCEA95F00C70097 /* OrderSummaryModel.swift */; };
+		8CF360481DCEAEBF00C70097 /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF360471DCEAEBF00C70097 /* OrderEntity.swift */; };
+		8CF3604A1DCEB00300C70097 /* ChooseBeverageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		8CC417601DC3A36900D528A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC417631DC3A36900D528A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC417651DC3A36900D528A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryViewController.swift; sourceTree = "<group>"; };
+		8CF360441DCEA95F00C70097 /* OrderSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSummaryModel.swift; sourceTree = "<group>"; };
+		8CF360471DCEAEBF00C70097 /* OrderEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
+		8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBeverageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				8CC417591DC3A36900D528A7 /* AppDelegate.swift */,
 				8CC417621DC3A36900D528A7 /* LaunchScreen.storyboard */,
 				8CF360401DCEA6C000C70097 /* Views */,
+				8CF360461DCEAEA700C70097 /* Model */,
 				8CF360411DCEA6DD00C70097 /* Storyboard Support */,
 				8CC417601DC3A36900D528A7 /* Assets.xcassets */,
 				8CC417651DC3A36900D528A7 /* Info.plist */,
@@ -76,9 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				8CC4175D1DC3A36900D528A7 /* Main.storyboard */,
-				8CC4175B1DC3A36900D528A7 /* ViewController.swift */,
-				8C0EE99E1DCC847F003ABABE /* OrderConfirmationViewController.swift */,
 				8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */,
+				8CC4175B1DC3A36900D528A7 /* ViewController.swift */,
+				8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */,
+				8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */,
+				8C0EE99E1DCC847F003ABABE /* OrderConfirmationViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -90,6 +101,15 @@
 				8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */,
 			);
 			name = "Storyboard Support";
+			sourceTree = "<group>";
+		};
+		8CF360461DCEAEA700C70097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CF360441DCEA95F00C70097 /* OrderSummaryModel.swift */,
+				8CF360471DCEAEBF00C70097 /* OrderEntity.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF360481DCEAEBF00C70097 /* OrderEntity.swift in Sources */,
 				8CC4175C1DC3A36900D528A7 /* ViewController.swift in Sources */,
 				8C10139A1DCEA4AF00D131D4 /* StoryboardViewController.swift in Sources */,
 				8C0EE9A11DCCECFC003ABABE /* SceneDispatchTable.swift in Sources */,
 				8C1013991DCEA4AF00D131D4 /* StoryboardController.swift in Sources */,
+				8CF360431DCEA92600C70097 /* OrderSummaryViewController.swift in Sources */,
+				8CF360451DCEA95F00C70097 /* OrderSummaryModel.swift in Sources */,
 				8CC4175A1DC3A36900D528A7 /* AppDelegate.swift in Sources */,
+				8CF3604A1DCEB00300C70097 /* ChooseBeverageViewController.swift in Sources */,
 				8C0EE99F1DCC847F003ABABE /* OrderConfirmationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -49,7 +49,7 @@
         <!--Choose Drink-->
         <scene sceneID="0TF-5O-Jab">
             <objects>
-                <tableViewController title="Choose Drink" id="jsJ-Ce-24o" customClass="StoryboardTableViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Choose Drink" id="jsJ-Ce-24o" customClass="ChooseBeverageViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sSS-Tt-GVR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,15 +216,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your Order. Please ask your barista on arrival for your order." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
-                                <rect key="frame" x="94.5" y="167" width="187.5" height="333.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your order. Please ask your barista on arrival to collect your beverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
+                                <rect key="frame" x="37.5" y="167" width="300" height="333.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orc-49-kIg">
-                                <rect key="frame" x="169" y="617" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orc-49-kIg">
+                                <rect key="frame" x="155" y="601" width="66" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <segue destination="emp-Tf-XKR" kind="unwind" unwindAction="unwindToRootViewControllerWithUnwindSegue:" id="1xd-9b-Fz2"/>
@@ -233,7 +233,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="33E-rJ-gUu" firstAttribute="width" secondItem="nos-N7-Ors" secondAttribute="width" multiplier="0.5" id="0D6-8x-U49"/>
+                            <constraint firstItem="33E-rJ-gUu" firstAttribute="width" secondItem="nos-N7-Ors" secondAttribute="width" multiplier="0.8" id="0D6-8x-U49"/>
+                            <constraint firstItem="fq2-fb-sse" firstAttribute="top" secondItem="orc-49-kIg" secondAttribute="bottom" constant="20" id="4g2-Rx-yiw"/>
+                            <constraint firstItem="orc-49-kIg" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Dze-4u-4gZ"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerY" secondItem="nos-N7-Ors" secondAttribute="centerY" id="P6C-4E-BRV"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Su9-No-pZi"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Tti-sN-HX8"/>
@@ -247,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="2678" y="941"/>
         </scene>
-        <!--Confirm Order-->
+        <!--Order Summary-->
         <scene sceneID="N5T-5Y-bri">
             <objects>
-                <viewController title="Confirm Order" id="W9L-sC-jUt" customClass="StoryboardViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Order Summary" id="W9L-sC-jUt" customClass="OrderSummaryViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="puo-3A-bOS"/>
                         <viewControllerLayoutGuide type="bottom" id="ZaP-CJ-f9Y"/>
@@ -266,31 +268,42 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☕️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15G-YQ-EKf">
-                                                <rect key="frame" x="143" y="120.5" width="88" height="98"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="82"/>
                                                 <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEk-Aq-rJu">
+                                                <rect key="frame" x="161" y="299.5" width="54" height="20.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="340" id="0Wd-xE-cpP"/>
-                                            <constraint firstItem="15G-YQ-EKf" firstAttribute="centerY" secondItem="j1Z-Jt-RAo" secondAttribute="centerY" id="9kV-qZ-6r6"/>
-                                            <constraint firstItem="15G-YQ-EKf" firstAttribute="centerX" secondItem="j1Z-Jt-RAo" secondAttribute="centerX" id="VeN-s5-PvJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="15G-YQ-EKf" secondAttribute="trailing" id="5Ie-aN-HXt"/>
+                                            <constraint firstItem="VEk-Aq-rJu" firstAttribute="centerX" secondItem="j1Z-Jt-RAo" secondAttribute="centerX" id="6q9-o3-QE7"/>
+                                            <constraint firstItem="15G-YQ-EKf" firstAttribute="top" secondItem="j1Z-Jt-RAo" secondAttribute="top" id="EkG-5E-mCy"/>
+                                            <constraint firstItem="15G-YQ-EKf" firstAttribute="width" secondItem="j1Z-Jt-RAo" secondAttribute="width" id="V4W-1X-9wl"/>
+                                            <constraint firstItem="15G-YQ-EKf" firstAttribute="height" secondItem="j1Z-Jt-RAo" secondAttribute="height" id="ecO-rA-ara"/>
+                                            <constraint firstAttribute="bottom" secondItem="VEk-Aq-rJu" secondAttribute="bottom" constant="20" id="vNZ-GM-EXY"/>
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-ae-Svf">
-                                        <rect key="frame" x="0.0" y="340" width="375" height="219"/>
+                                        <rect key="frame" x="0.0" y="340" width="375" height="199"/>
                                         <connections>
                                             <segue destination="WNu-Ns-ueD" kind="embed" id="qrN-B5-vzR"/>
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-wG-5Up">
-                                        <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="539" width="375" height="64"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="1d8-tE-kdU"/>
+                                            <constraint firstAttribute="height" constant="64" id="1d8-tE-kdU"/>
                                         </constraints>
-                                        <state key="normal" title="CONTINUE"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <state key="normal" title="BUY"/>
                                         <connections>
                                             <segue destination="jDH-X3-0j9" kind="show" id="z0U-xg-fzc"/>
                                         </connections>
@@ -306,10 +319,13 @@
                             <constraint firstItem="W3p-Ap-KqY" firstAttribute="leading" secondItem="xDA-2y-4DM" secondAttribute="leadingMargin" constant="-16" id="gQH-jS-X0m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="VEk-Aq-rJu" id="55w-du-nFA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sAt-XK-e73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="116"/>
+            <point key="canvasLocation" x="2677.5999999999999" y="115.59220389805098"/>
         </scene>
         <!--Add Ins-->
         <scene sceneID="GWx-Na-bFh">
