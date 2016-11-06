@@ -1,20 +1,20 @@
 // Adds Conformance to Destination View Controllers That Require Preparation.
 
 extension ViewController: StoryboardVisitableScene {
-  func accept(visitor: StoryboardSceneVisitor) { visitor.visit(self) }
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
 extension OrderConfirmationViewController: StoryboardVisitableScene {
-  func accept(visitor: StoryboardSceneVisitor) { visitor.visit(self) }
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
 extension OrderSummaryViewController: StoryboardVisitableScene {
-  func accept(visitor: StoryboardSceneVisitor) { visitor.visit(self) }
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
 // Extends The Visitor Protocol with Operations for Handling Destinations
 
-extension StoryboardSceneVisitor {
+extension StoryboardController {
   
   func visit(_ scene: ViewController) {
     

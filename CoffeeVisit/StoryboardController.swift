@@ -14,19 +14,19 @@ public struct StoryboardSegueHandler {
 }
 
 public protocol StoryboardVisitableScene {
-  func accept(visitor: StoryboardSceneVisitor)
+  func accept(visitor: StoryboardController)
 }
 
 public protocol StoryboardManagedScene {
   var storyboardSegueHandler: StoryboardSegueHandler! { get set }
 }
 
-struct StoryboardController: StoryboardSceneVisitor {
+public struct StoryboardController {
   
   let segue: UIStoryboardSegue
   let sender: Any?
   
-  func prepare() {
+  fileprivate func prepare() {
     setSegueHandlerOnDestination()
     dispatchVisitorToDestination()
   }
@@ -42,13 +42,3 @@ struct StoryboardController: StoryboardSceneVisitor {
   }
   
 }
-
-public protocol StoryboardSceneVisitor {
-  
-  var segue: UIStoryboardSegue { get }
-  var sender: Any? { get }
-  
-  // This Protocol Provides the Client an Extension Point for Extending With Operations To Visit Each Scene
-  
-}
-
