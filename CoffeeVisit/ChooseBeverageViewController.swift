@@ -1,19 +1,17 @@
 import UIKit
 
-class ChooseBeverageViewController: StoryboardTableViewController, OrderDataSource {
+protocol ChooseBeverageViewControllerDelegate {
   
+  func chooseBeverageViewController(_ viewController:ChooseBeverageViewController,  didChoose drink: Drink)
   
-  var order: Order {
-    
-    get {
-     
-      guard let selectedTitle = titleForSelectedRow() else {
-        return Order()
-      }
-      
-      return Order(name: selectedTitle)
-      
-    }
+}
+
+class ChooseBeverageViewController: StoryboardTableViewController {
+  
+  var delegate: ChooseBeverageViewControllerDelegate?
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    delegate?.chooseBeverageViewController(self,  didChoose: drinkForSelectedRow())
   }
   
   private func titleForSelectedRow() -> String? {
@@ -22,11 +20,24 @@ class ChooseBeverageViewController: StoryboardTableViewController, OrderDataSour
       return nil
     }
     
-    guard let selectedText = self.tableView.cellForRow(at: selectedIndexPath)?.textLabel?.text else {
-      return nil
-    }
+   return self.tableView.cellForRow(at: selectedIndexPath)!.textLabel!.text
     
-    return selectedText
+  }
+  
+  private func drinkForSelectedRow() -> Drink {
+    
+    guard let drinkName = titleForSelectedRow() else { return .Drip }
+    
+    switch drinkName {
+    case Drink.Espresso.rawValue:
+      return .Espresso
+    case Drink.Drip.rawValue:
+      return .Drip
+    case Drink.Latte.rawValue:
+      return .Latte
+    default:
+      return .Drip
+    }
     
   }
   

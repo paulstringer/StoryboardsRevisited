@@ -4,11 +4,23 @@ extension ViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
+extension ChooseBeverageViewController: StoryboardVisitableScene {
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
+}
+
 extension OrderConfirmationViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
 extension OrderSummaryViewController: StoryboardVisitableScene {
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
+}
+
+extension ChooseSizeViewController: StoryboardVisitableScene {
+  func accept(visitor: StoryboardController) { visitor.visit(self) }
+}
+
+extension CustomiseOrderViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
@@ -22,23 +34,48 @@ extension StoryboardController {
   
   }
   
+  func visit(_ scene: ChooseBeverageViewController) {
+    
+    // Prepare ChooseBeverageViewController
+    
+    scene.delegate = context
+  }
+  
   func visit(_ scene: OrderSummaryViewController) {
     
     // Prepare OrderSummaryViewController
     
-    if let source = self.segue.source as? OrderDataSource {
-      scene.model = OrderSummaryViewModel(name: source.order.name)
-    } else {
-      scene.model = OrderSummaryViewModel(name: "Unknown")
-    }
+//    if let source = self.segue.source as? OrderDataSource {
+//      
+//    } else {
+//      scene.presenter = OrderSummaryPresenter(view: scene, order: Order())
+//    }
+    
+    scene.presenter = OrderSummaryPresenter(view: scene, context: context)
     
   }
   
+  func visit(_ scene: CustomiseOrderViewController) {
+    
+    // Prepare CustomiseOrderViewController
+    
+    scene.presenter = CustomiseOrderSummaryPresenter(view: scene, context: context)
+    
+    
+  }
   func visit(_ scene: OrderConfirmationViewController) {
     
     // Prepare OrderConfirmationViewController
     
     scene.navigationItem.hidesBackButton = true
+  }
+  
+  func visit(_ scene: ChooseSizeViewController) {
+    
+    // Prepare ChooseSizeViewController
+    
+    scene.delegate = context
+    
   }
   
 }

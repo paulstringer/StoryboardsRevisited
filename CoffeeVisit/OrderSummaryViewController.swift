@@ -1,13 +1,17 @@
 import UIKit
 
-class OrderSummaryViewController: StoryboardViewController {
-  
-  var model: OrderSummaryViewModel!
-  
+class OrderSummaryViewController: StoryboardViewController, OrderSummaryView {
+
   @IBOutlet weak var label: UILabel!
   
-  override func viewWillAppear(_ animated: Bool) {
+  var presenter: OrderSummaryPresenter?
+
+  internal func updateView(model: OrderSummaryViewModel) {
     label.text = model.name
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    presenter?.update()
   }
   
 }

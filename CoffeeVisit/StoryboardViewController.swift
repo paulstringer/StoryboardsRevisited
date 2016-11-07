@@ -18,9 +18,9 @@ class StoryboardNavigationController: UINavigationController, StoryboardManagedS
     
     didSet {
       
-      guard var controller = self.topViewController as? StoryboardManagedScene else { return }
+      let segue = UIStoryboardSegue(identifier: nil, source: self, destination: self.topViewController!)
       
-      controller.storyboardSegueHandler = storyboardSegueHandler
+      storyboardSegueHandler.prepare(for: segue, sender: nil)
       
     }
     

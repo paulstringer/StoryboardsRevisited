@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var viewController = firstViewController()
     
-    //let context = StoryboardContext()
-    
     viewController.storyboardSegueHandler = StoryboardSegueHandler()
     
   }

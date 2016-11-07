@@ -74,7 +74,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="W9L-sC-jUt" kind="show" id="6mW-rQ-CT9"/>
+                                            <segue destination="W9L-sC-jUt" kind="show" identifier="OrderEspresso" id="6mW-rQ-CT9"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PNA-Jm-B0C" style="IBUITableViewCellStyleDefault" id="7Jd-Cg-q5O">
@@ -114,7 +114,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="W9L-sC-jUt" kind="show" id="Jou-AI-mig"/>
+                                            <segue destination="W9L-sC-jUt" kind="show" identifier="OrderLatte" id="Jou-AI-mig"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -134,7 +134,7 @@
         <!--Customise Drink-->
         <scene sceneID="Wd3-RA-fV5">
             <objects>
-                <tableViewController title="Customise Drink" id="WNu-Ns-ueD" customClass="StoryboardTableViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Customise Drink" id="WNu-Ns-ueD" customClass="CustomiseOrderViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UIR-Ai-I5F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,7 +216,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your order. Please ask your barista on arrival to collect your beverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your order. Please ask your barista on arrival to enjoy your beverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
                                 <rect key="frame" x="37.5" y="167" width="300" height="333.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
@@ -456,7 +456,7 @@
         <!--Size-->
         <scene sceneID="5yp-4a-X6T">
             <objects>
-                <tableViewController title="Size" id="cnP-aM-zgW" customClass="StoryboardTableViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Size" id="cnP-aM-zgW" customClass="ChooseSizeViewController" customModule="CoffeeVisit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="V1l-hl-vvM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -548,6 +548,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4L0-IM-Bx1"/>
+        <segue reference="6mW-rQ-CT9"/>
     </inferredMetricsTieBreakers>
 </document>
