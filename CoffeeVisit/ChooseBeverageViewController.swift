@@ -24,6 +24,10 @@ class ChooseBeverageViewController: StoryboardTableViewController {
     
   }
   
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    self.performSegue(withIdentifier: "ShowSummary", sender: nil)
+  }
+  
   private func drinkForSelectedRow() -> Drink {
     
     guard let drinkName = titleForSelectedRow() else { return .Drip }

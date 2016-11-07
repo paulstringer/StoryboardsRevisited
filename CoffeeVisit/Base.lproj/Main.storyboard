@@ -73,9 +73,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="W9L-sC-jUt" kind="show" identifier="OrderEspresso" id="6mW-rQ-CT9"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PNA-Jm-B0C" style="IBUITableViewCellStyleDefault" id="7Jd-Cg-q5O">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
@@ -93,9 +90,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="W9L-sC-jUt" kind="show" id="4L0-IM-Bx1"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="VNP-Tv-nyt" style="IBUITableViewCellStyleDefault" id="tKy-85-W80">
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
@@ -113,9 +107,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="W9L-sC-jUt" kind="show" identifier="OrderLatte" id="Jou-AI-mig"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -126,6 +117,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Choose Beverage" id="bwp-jG-g2K"/>
+                    <connections>
+                        <segue destination="W9L-sC-jUt" kind="show" identifier="ShowSummary" id="HWq-Xf-W5K"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L05-Gj-dhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -547,7 +541,4 @@
             <point key="canvasLocation" x="1156" y="116"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6mW-rQ-CT9"/>
-    </inferredMetricsTieBreakers>
 </document>
