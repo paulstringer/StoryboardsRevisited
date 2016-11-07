@@ -11,7 +11,6 @@
 		8C0EE9A11DCCECFC003ABABE /* SceneDispatchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0EE9A01DCCECFC003ABABE /* SceneDispatchTable.swift */; };
 		8C1013991DCEA4AF00D131D4 /* StoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */; };
 		8C10139A1DCEA4AF00D131D4 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */; };
-		8C1116C21DD0F62C009E8108 /* Main-Alt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1116C01DD0F617009E8108 /* Main-Alt.storyboard */; };
 		8C1197991DD0E21600CB7761 /* CustomiseOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */; };
 		8C11979B1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11979A1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift */; };
 		8CC4175A1DC3A36900D528A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC417591DC3A36900D528A7 /* AppDelegate.swift */; };
@@ -32,7 +31,6 @@
 		8C0EE9A01DCCECFC003ABABE /* SceneDispatchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDispatchTable.swift; sourceTree = "<group>"; };
 		8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
 		8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
-		8C1116C11DD0F617009E8108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-Alt.storyboard"; sourceTree = "<group>"; };
 		8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseOrderViewController.swift; sourceTree = "<group>"; };
 		8C11979A1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseOrderSummaryModel.swift; sourceTree = "<group>"; };
 		8CC417561DC3A36900D528A7 /* CoffeeVisit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeVisit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				8CC4175D1DC3A36900D528A7 /* Main.storyboard */,
-				8C1116C01DD0F617009E8108 /* Main-Alt.storyboard */,
 				8CC4175B1DC3A36900D528A7 /* ViewController.swift */,
 				8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */,
 				8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */,
@@ -187,7 +184,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC417641DC3A36900D528A7 /* LaunchScreen.storyboard in Resources */,
-				8C1116C21DD0F62C009E8108 /* Main-Alt.storyboard in Resources */,
 				8CC417611DC3A36900D528A7 /* Assets.xcassets in Resources */,
 				8CC4175F1DC3A36900D528A7 /* Main.storyboard in Resources */,
 			);
@@ -220,14 +216,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8C1116C01DD0F617009E8108 /* Main-Alt.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C1116C11DD0F617009E8108 /* Base */,
-			);
-			name = "Main-Alt.storyboard";
-			sourceTree = "<group>";
-		};
 		8CC4175D1DC3A36900D528A7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

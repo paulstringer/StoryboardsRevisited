@@ -17,7 +17,7 @@ class CoffeeOrderContext: ChooseSizeViewControllerDelegate, ChooseBeverageViewCo
     
     order.drink = drink
     
-    viewController.performSegue(withIdentifier: "ShowSummary", sender: nil)
+    viewController.performSegue(withIdentifier: "ShowNext", sender: nil)
     
   }
 
