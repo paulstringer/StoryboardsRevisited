@@ -1,3 +1,4 @@
+
 import Foundation
 
 class CoffeeOrderContext: ChooseSizeViewControllerDelegate, ChooseBeverageViewControllerDelegate {
@@ -15,6 +16,9 @@ class CoffeeOrderContext: ChooseSizeViewControllerDelegate, ChooseBeverageViewCo
   internal func chooseBeverageViewController(_ viewController: ChooseBeverageViewController, didChoose drink: Drink) {
     
     order.drink = drink
+    
+    viewController.performSegue(withIdentifier: "ShowSummary", sender: nil)
+    
   }
 
   

@@ -10,10 +10,6 @@ class ChooseBeverageViewController: StoryboardTableViewController {
   
   var delegate: ChooseBeverageViewControllerDelegate?
   
-  override func viewWillDisappear(_ animated: Bool) {
-    delegate?.chooseBeverageViewController(self,  didChoose: drinkForSelectedRow())
-  }
-  
   private func titleForSelectedRow() -> String? {
     
     guard let selectedIndexPath = self.tableView.indexPathForSelectedRow else {
@@ -25,7 +21,9 @@ class ChooseBeverageViewController: StoryboardTableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    self.performSegue(withIdentifier: "ShowSummary", sender: nil)
+    
+    delegate?.chooseBeverageViewController(self,  didChoose: drinkForSelectedRow())
+    
   }
   
   private func drinkForSelectedRow() -> Drink {
