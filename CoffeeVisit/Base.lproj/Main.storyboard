@@ -221,8 +221,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your order. Please ask your barista on arrival to enjoy your beverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
-                                <rect key="frame" x="37.5" y="167" width="300" height="333.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for your order. Please ask your barista on arrival to collect your beverage." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33E-rJ-gUu">
+                                <rect key="frame" x="38" y="267" width="300" height="133"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,24 +235,32 @@
                                     <segue destination="emp-Tf-XKR" kind="unwind" unwindAction="unwindToRootViewControllerWithUnwindSegue:" id="1xd-9b-Fz2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💁🏼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBI-Ev-9Eo">
+                                <rect key="frame" x="143.5" y="167" width="88" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="82"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="width" secondItem="nos-N7-Ors" secondAttribute="width" multiplier="0.8" id="0D6-8x-U49"/>
                             <constraint firstItem="fq2-fb-sse" firstAttribute="top" secondItem="orc-49-kIg" secondAttribute="bottom" constant="20" id="4g2-Rx-yiw"/>
                             <constraint firstItem="orc-49-kIg" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Dze-4u-4gZ"/>
+                            <constraint firstItem="33E-rJ-gUu" firstAttribute="top" secondItem="PBI-Ev-9Eo" secondAttribute="bottom" constant="2" id="J02-HY-WMG"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerY" secondItem="nos-N7-Ors" secondAttribute="centerY" id="P6C-4E-BRV"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Su9-No-pZi"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="Tti-sN-HX8"/>
                             <constraint firstItem="33E-rJ-gUu" firstAttribute="centerY" secondItem="nos-N7-Ors" secondAttribute="centerY" id="Vv1-oC-Emp"/>
-                            <constraint firstItem="33E-rJ-gUu" firstAttribute="height" secondItem="nos-N7-Ors" secondAttribute="height" multiplier="0.5" id="taO-DV-HCS"/>
+                            <constraint firstItem="PBI-Ev-9Eo" firstAttribute="centerX" secondItem="nos-N7-Ors" secondAttribute="centerX" id="hUe-3C-idL"/>
+                            <constraint firstItem="33E-rJ-gUu" firstAttribute="height" secondItem="nos-N7-Ors" secondAttribute="height" multiplier="0.2" id="taO-DV-HCS"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOS-s8-bZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="emp-Tf-XKR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="941"/>
+            <point key="canvasLocation" x="2677.5999999999999" y="940.47976011994012"/>
         </scene>
         <!--Order Summary-->
         <scene sceneID="N5T-5Y-bri">
