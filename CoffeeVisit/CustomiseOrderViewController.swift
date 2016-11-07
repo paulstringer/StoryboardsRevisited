@@ -7,7 +7,7 @@ class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrde
   override func viewWillAppear(_ animated: Bool) {
     presenter?.update()
   }
-  
+
   func updateView(model: CustomiseOrderSummaryViewModel) {
     updateCupsizeTableCellDetailText(cupsize: model.cupSizeDetail)
     deselectSelectedRow()
