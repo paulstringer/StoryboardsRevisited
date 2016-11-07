@@ -44,13 +44,7 @@ extension StoryboardController {
   func visit(_ scene: OrderSummaryViewController) {
     
     // Prepare OrderSummaryViewController
-    
-//    if let source = self.segue.source as? OrderDataSource {
-//      
-//    } else {
-//      scene.presenter = OrderSummaryPresenter(view: scene, order: Order())
-//    }
-    
+
     scene.presenter = OrderSummaryPresenter(view: scene, context: context)
     
   }
