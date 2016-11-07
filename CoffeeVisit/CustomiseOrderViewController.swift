@@ -9,6 +9,7 @@ class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrde
   }
 
   func updateView(model: CustomiseOrderSummaryViewModel) {
+    tableView.reloadData()
     updateCupsizeTableCellDetailText(cupsize: model.cupSizeDetail)
     deselectSelectedRow()
   }
