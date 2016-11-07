@@ -162,7 +162,7 @@
                                             <segue destination="RO4-nS-k1v" kind="show" id="mWf-0e-V98"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="LI3-Kb-MHh" detailTextLabel="Ae7-LY-D6z" style="IBUITableViewCellStyleValue1" id="FKG-kT-v74">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" textLabel="LI3-Kb-MHh" detailTextLabel="Ae7-LY-D6z" style="IBUITableViewCellStyleValue1" id="FKG-kT-v74">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FKG-kT-v74" id="jFh-Sp-kba">

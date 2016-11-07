@@ -8,16 +8,9 @@ class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrde
     presenter?.update()
   }
   
-  override func viewDidDisappear(_ animated: Bool) {
-    deselectSelectedRow()
-  }
-  
   func updateView(model: CustomiseOrderSummaryViewModel) {
-    
-    print("Update the detail of the cupsize")
-    
     updateCupsizeTableCellDetailText(cupsize: model.cupSizeDetail)
-    
+    deselectSelectedRow()
   }
   
   func deselectSelectedRow() {
