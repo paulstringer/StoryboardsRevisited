@@ -20,7 +20,7 @@ struct CustomiseOrderSummaryPresenter {
   
   func update() {
     let order = context.order
-    let model = CustomiseOrderSummaryViewModel(cupSizeDetail: order.cupSize.rawValue)
+    let model = CustomiseOrderSummaryViewModel(cupSizeDetail: order.cupSize.name)
     view.updateView(model: model)
   }
   

@@ -28,9 +28,9 @@ class ChooseBeverageViewController: StoryboardTableViewController {
   
   private func drinkForSelectedRow() -> Drink {
     
-    guard let drinkName = titleForSelectedRow() else { return .Drip }
+//    guard let drinkName = titleForSelectedRow() else { return .Drip }
     
-    return Drink(rawValue: drinkName)!
+    return Drink(rawValue: "D")!
     
   }
   

@@ -7,6 +7,15 @@ class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrde
   override func viewWillAppear(_ animated: Bool) {
     presenter?.update()
   }
+  
+  @IBAction func unwindToCustomiseOrder(unwindSegue: UIStoryboardSegue) {
+    
+    /*
+     Empty. Exists solely so that view controllers can find instances
+     of this class to unwind to.
+     */
+    
+  }
 
   func updateView(model: CustomiseOrderSummaryViewModel) {
     tableView.reloadData()
@@ -21,6 +30,7 @@ class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrde
     }
     
   }
+  
   func updateCupsizeTableCellDetailText(cupsize: String) {
     
     let indexPathOfCupSizeRow = IndexPath(row: 1, section: 0)

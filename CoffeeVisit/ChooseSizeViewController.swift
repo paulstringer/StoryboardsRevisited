@@ -2,36 +2,44 @@ import UIKit
 
 protocol ChooseSizeViewControllerDelegate {
   
-  func chooseSizeViewController(_ viewController:ChooseSizeViewController,  didChoose cupSize: CupSize)
+  func chooseSizeViewController(_ viewController:ChooseSizeViewController,  didChoose cupSize: CupSizeIdentifier)
   
 }
 
-class ChooseSizeViewController: StoryboardTableViewController {
+class ChooseSizeViewController: StoryboardTableViewController, ChooseSizeView {
   
-  var selectedCupSize: CupSize = .Medium
+  var presenter: ChooseSizePresenter?
+  var items = [ChooseSizeViewItem]()
   var delegate: ChooseSizeViewControllerDelegate?
   
-  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    selectedCupSize = cupSizeForIndexPath(indexPath)
-    delegate?.chooseSizeViewController(self, didChoose: selectedCupSize)
-    
+  override func viewWillDisappear(_ animated: Bool) {
+    sendUpdates()
   }
   
-  func cupSizeForIndexPath(_ indexPath: IndexPath) -> CupSize {
-    
-    switch indexPath.row {
-    case 0:
-      return .Small
-    case 1:
-        return .Medium
-    case 2:
-      return .Large
-    default:
-      return .Medium
-    }
-    
+  override func viewWillAppear(_ animated: Bool) {
+    presenter?.update()
   }
-
+  
+  func updateView(model: ChooseSizeViewModel) {
+    items = model.items
+  }
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return items.count
+  }
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let item = items[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: "CELL")!
+    cell.textLabel?.text = item.name
+    return cell
+  }
+  
+  private func sendUpdates() {
+    if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+      let selectedItem = items[selectedIndexPath.row]
+      delegate?.chooseSizeViewController(self, didChoose: selectedItem.identifier)
+    }
+  }
   
 }

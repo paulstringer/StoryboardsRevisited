@@ -67,7 +67,7 @@ extension StoryboardController {
   func visit(_ scene: ChooseSizeViewController) {
     
     // Prepare ChooseSizeViewController
-    
+    scene.presenter = ChooseSizePresenter(view: scene)
     scene.delegate = context
     
   }
