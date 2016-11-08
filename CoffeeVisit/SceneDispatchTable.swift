@@ -38,6 +38,7 @@ extension StoryboardController {
     
     // Prepare ChooseBeverageViewController
     
+    scene.interactor = ChooseBeverageInteractor(view: scene)
     scene.delegate = context
   }
   
@@ -67,6 +68,7 @@ extension StoryboardController {
   func visit(_ scene: ChooseSizeViewController) {
     
     // Prepare ChooseSizeViewController
+    
     scene.presenter = ChooseSizePresenter(view: scene)
     scene.delegate = context
     

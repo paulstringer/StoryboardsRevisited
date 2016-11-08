@@ -7,15 +7,13 @@ class CoffeeOrderContext: ChooseSizeViewControllerDelegate, ChooseBeverageViewCo
   
   internal func chooseSizeViewController(_ viewController: ChooseSizeViewController, didChoose cupSize: CupSizeIdentifier) {
     
-    order.cupSize = CupSizeEntity(identifier: cupSize)
+    order.cupSize = CupSizeEntityGateway.fetchOne(for: cupSize)!
     
   }
 
-  internal func chooseBeverageViewController(_ viewController: ChooseBeverageViewController, didChoose drink: Drink) {
+  internal func chooseBeverageViewController(_ viewController: ChooseBeverageViewController, didChoose drink: DrinkIdentifier) {
     
-//    order.drink = drink
-    
-    viewController.performSegue(withIdentifier: "ShowNext", sender: nil)
+    order.drink = DrinkEntityGateway.fetchOne(for: drink)!
     
   }
 

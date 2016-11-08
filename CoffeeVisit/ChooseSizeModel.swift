@@ -20,7 +20,7 @@ struct ChooseSizePresenter {
   var view: ChooseSizeView
   
   func update() {
-    let model = ChooseSizeViewModel(items: CupSizeEntityGateway.fetchAllCupSizes.map { (entity) -> ChooseSizeViewItem in
+    let model = ChooseSizeViewModel(items: CupSizeEntityGateway.fetchAll.map { (entity) -> ChooseSizeViewItem in
       return ChooseSizeViewItem(name: entity.name, identifier: entity.identifier)
     })
     view.updateView(model: model)
