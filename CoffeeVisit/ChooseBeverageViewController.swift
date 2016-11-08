@@ -30,16 +30,7 @@ class ChooseBeverageViewController: StoryboardTableViewController {
     
     guard let drinkName = titleForSelectedRow() else { return .Drip }
     
-    switch drinkName {
-    case Drink.Espresso.rawValue:
-      return .Espresso
-    case Drink.Drip.rawValue:
-      return .Drip
-    case Drink.Latte.rawValue:
-      return .Latte
-    default:
-      return .Drip
-    }
+    return Drink(rawValue: drinkName)!
     
   }
   

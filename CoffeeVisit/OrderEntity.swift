@@ -21,12 +21,4 @@ struct Order {
     self.drink = drink
     self.cupSize = cupSize
   }
-  
-  var name: String {
-    
-    get {
-      return drink.rawValue
-    }
-    
-  }
 }

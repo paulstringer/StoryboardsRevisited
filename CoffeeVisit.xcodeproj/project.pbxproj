@@ -79,12 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				8CC417591DC3A36900D528A7 /* AppDelegate.swift */,
-				8CC417621DC3A36900D528A7 /* LaunchScreen.storyboard */,
 				8CF360401DCEA6C000C70097 /* Views */,
 				8CF360461DCEAEA700C70097 /* Model */,
-				8CF360411DCEA6DD00C70097 /* Storyboard Support */,
+				8CF360411DCEA6DD00C70097 /* Storyboard Visitor */,
 				8CC417601DC3A36900D528A7 /* Assets.xcassets */,
 				8CC417651DC3A36900D528A7 /* Info.plist */,
+				8CC417621DC3A36900D528A7 /* LaunchScreen.storyboard */,
 			);
 			path = CoffeeVisit;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		8CF360411DCEA6DD00C70097 /* Storyboard Support */ = {
+		8CF360411DCEA6DD00C70097 /* Storyboard Visitor */ = {
 			isa = PBXGroup;
 			children = (
 				8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */,
@@ -111,7 +111,7 @@
 				8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */,
 				8CF3604D1DD0B2EA00C70097 /* CoffeeOrderContext.swift */,
 			);
-			name = "Storyboard Support";
+			name = "Storyboard Visitor";
 			sourceTree = "<group>";
 		};
 		8CF360461DCEAEA700C70097 /* Model */ = {

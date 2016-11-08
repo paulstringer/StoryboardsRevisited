@@ -3,7 +3,7 @@ import Foundation
 struct OrderSummaryViewModel {
   
   let name: String
-  let cupSize: CupSize
+  let cupSize: String
   
 }
 
@@ -21,7 +21,7 @@ struct OrderSummaryPresenter {
   
   func update() {
     let order = context.order
-    let model = OrderSummaryViewModel(name: order.name, cupSize: order.cupSize)
+    let model = OrderSummaryViewModel(name: order.drink.rawValue, cupSize: order.cupSize.rawValue)
     view.updateView(model: model)
   }
 }
