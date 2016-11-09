@@ -5,11 +5,11 @@ struct CustomiseOrderSummaryViewModel {
 }
 
 protocol CustomiseOrderSummaryView {
-  var presenter: CustomiseOrderSummaryPresenter? { get set }
+  var interactor: CustomiseOrderSummaryInteractor? { get set }
   func updateView(model: CustomiseOrderSummaryViewModel)
 }
 
-struct CustomiseOrderSummaryPresenter {
+struct CustomiseOrderSummaryInteractor {
   var view: CustomiseOrderSummaryView
   var context: CoffeeOrderContext
   

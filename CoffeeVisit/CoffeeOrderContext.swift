@@ -16,8 +16,5 @@ class CoffeeOrderContext: ChooseSizeViewControllerDelegate, ChooseBeverageViewCo
     order.drink = DrinkEntityGateway.fetchOne(for: drink)!
     
   }
-
-  
-  
   
 }

@@ -11,11 +11,11 @@ struct ChooseSizeViewModel {
 }
 
 protocol ChooseSizeView {
-  var presenter: ChooseSizePresenter? { get set }
+  var interactor: ChooseSizeInteractor? { get set }
   func updateView(model: ChooseSizeViewModel)
 }
 
-struct ChooseSizePresenter {
+struct ChooseSizeInteractor {
   
   var view: ChooseSizeView
   

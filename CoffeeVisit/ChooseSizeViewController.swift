@@ -8,7 +8,7 @@ protocol ChooseSizeViewControllerDelegate {
 
 class ChooseSizeViewController: StoryboardTableViewController, ChooseSizeView {
   
-  var presenter: ChooseSizePresenter?
+  var interactor: ChooseSizeInteractor?
   var items = [ChooseSizeViewItem]()
   var delegate: ChooseSizeViewControllerDelegate?
   
@@ -17,7 +17,7 @@ class ChooseSizeViewController: StoryboardTableViewController, ChooseSizeView {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    presenter?.update()
+    interactor?.update()
   }
   
   func updateView(model: ChooseSizeViewModel) {

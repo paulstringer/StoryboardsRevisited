@@ -46,7 +46,7 @@ extension StoryboardController {
     
     // Prepare OrderSummaryViewController
 
-    scene.presenter = OrderSummaryPresenter(view: scene, context: context)
+    scene.interactor = OrderSummaryInteractor(view: scene, context: context)
     
   }
   
@@ -54,7 +54,7 @@ extension StoryboardController {
     
     // Prepare CustomiseOrderViewController
     
-    scene.presenter = CustomiseOrderSummaryPresenter(view: scene, context: context)
+    scene.interactor = CustomiseOrderSummaryInteractor(view: scene, context: context)
     
     
   }
@@ -69,7 +69,7 @@ extension StoryboardController {
     
     // Prepare ChooseSizeViewController
     
-    scene.presenter = ChooseSizePresenter(view: scene)
+    scene.interactor = ChooseSizeInteractor(view: scene)
     scene.delegate = context
     
   }

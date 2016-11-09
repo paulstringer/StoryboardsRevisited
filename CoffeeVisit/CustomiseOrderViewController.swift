@@ -2,10 +2,10 @@ import UIKit
 
 class CustomiseOrderViewController: StoryboardTableViewController, CustomiseOrderSummaryView {
   
-  var presenter: CustomiseOrderSummaryPresenter?
+  var interactor: CustomiseOrderSummaryInteractor?
   
   override func viewWillAppear(_ animated: Bool) {
-    presenter?.update()
+    interactor?.update()
   }
   
   @IBAction func unwindToCustomiseOrder(unwindSegue: UIStoryboardSegue) {

@@ -12,7 +12,7 @@
 		8C1013991DCEA4AF00D131D4 /* StoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */; };
 		8C10139A1DCEA4AF00D131D4 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */; };
 		8C1197991DD0E21600CB7761 /* CustomiseOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */; };
-		8C11979B1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11979A1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift */; };
+		8C11979B1DD0E88F00CB7761 /* CustomiseOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C11979A1DD0E88F00CB7761 /* CustomiseOrderModel.swift */; };
 		8C3DB7F01DD205D600EF825B /* ChooseSizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3DB7EF1DD205D600EF825B /* ChooseSizeModel.swift */; };
 		8C3DB7F21DD24A2B00EF825B /* ChooseBeverageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3DB7F11DD24A2B00EF825B /* ChooseBeverageModel.swift */; };
 		8CC4175A1DC3A36900D528A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC417591DC3A36900D528A7 /* AppDelegate.swift */; };
@@ -34,7 +34,7 @@
 		8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
 		8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseOrderViewController.swift; sourceTree = "<group>"; };
-		8C11979A1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseOrderSummaryModel.swift; sourceTree = "<group>"; };
+		8C11979A1DD0E88F00CB7761 /* CustomiseOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomiseOrderModel.swift; sourceTree = "<group>"; };
 		8C3DB7EF1DD205D600EF825B /* ChooseSizeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSizeModel.swift; sourceTree = "<group>"; };
 		8C3DB7F11DD24A2B00EF825B /* ChooseBeverageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBeverageModel.swift; sourceTree = "<group>"; };
 		8CC417561DC3A36900D528A7 /* CoffeeVisit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeVisit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +63,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C7678A11DD37B7900FC63EA /* Choose Beverage */ = {
+			isa = PBXGroup;
+			children = (
+				8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */,
+				8C3DB7F11DD24A2B00EF825B /* ChooseBeverageModel.swift */,
+			);
+			name = "Choose Beverage";
+			sourceTree = "<group>";
+		};
+		8C7678A21DD37B8A00FC63EA /* Order Summary */ = {
+			isa = PBXGroup;
+			children = (
+				8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */,
+				8CF360441DCEA95F00C70097 /* OrderSummaryModel.swift */,
+			);
+			name = "Order Summary";
+			sourceTree = "<group>";
+		};
+		8C7678A31DD37B9200FC63EA /* Customise Order */ = {
+			isa = PBXGroup;
+			children = (
+				8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */,
+				8C11979A1DD0E88F00CB7761 /* CustomiseOrderModel.swift */,
+			);
+			name = "Customise Order";
+			sourceTree = "<group>";
+		};
+		8C7678A41DD37B9C00FC63EA /* Choose Size */ = {
+			isa = PBXGroup;
+			children = (
+				8CF3604B1DD0ACCA00C70097 /* ChooseSizeViewController.swift */,
+				8C3DB7EF1DD205D600EF825B /* ChooseSizeModel.swift */,
+			);
+			name = "Choose Size";
+			sourceTree = "<group>";
+		};
+		8C7678A51DD37BA700FC63EA /* Order Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				8C0EE99E1DCC847F003ABABE /* OrderConfirmationViewController.swift */,
+			);
+			name = "Order Confirmation";
+			sourceTree = "<group>";
+		};
+		8C7678A61DD37BAE00FC63EA /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				8CC4175B1DC3A36900D528A7 /* ViewController.swift */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
 		8CC4174D1DC3A36900D528A7 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +136,8 @@
 			children = (
 				8CC417591DC3A36900D528A7 /* AppDelegate.swift */,
 				8CF360401DCEA6C000C70097 /* Views */,
-				8CF360461DCEAEA700C70097 /* Model */,
-				8CF360411DCEA6DD00C70097 /* Storyboard Visitor */,
+				8CF360461DCEAEA700C70097 /* Entities */,
+				8CF360411DCEA6DD00C70097 /* Storyboard Visitor Engine */,
 				8CC417601DC3A36900D528A7 /* Assets.xcassets */,
 				8CC417651DC3A36900D528A7 /* Info.plist */,
 				8CC417621DC3A36900D528A7 /* LaunchScreen.storyboard */,
@@ -97,17 +149,17 @@
 			isa = PBXGroup;
 			children = (
 				8CC4175D1DC3A36900D528A7 /* Main.storyboard */,
-				8CC4175B1DC3A36900D528A7 /* ViewController.swift */,
-				8CF360491DCEB00300C70097 /* ChooseBeverageViewController.swift */,
-				8CF360421DCEA92600C70097 /* OrderSummaryViewController.swift */,
-				8C1197981DD0E21600CB7761 /* CustomiseOrderViewController.swift */,
-				8CF3604B1DD0ACCA00C70097 /* ChooseSizeViewController.swift */,
-				8C0EE99E1DCC847F003ABABE /* OrderConfirmationViewController.swift */,
+				8C7678A61DD37BAE00FC63EA /* Initial */,
+				8C7678A11DD37B7900FC63EA /* Choose Beverage */,
+				8C7678A21DD37B8A00FC63EA /* Order Summary */,
+				8C7678A31DD37B9200FC63EA /* Customise Order */,
+				8C7678A41DD37B9C00FC63EA /* Choose Size */,
+				8C7678A51DD37BA700FC63EA /* Order Confirmation */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		8CF360411DCEA6DD00C70097 /* Storyboard Visitor */ = {
+		8CF360411DCEA6DD00C70097 /* Storyboard Visitor Engine */ = {
 			isa = PBXGroup;
 			children = (
 				8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */,
@@ -115,19 +167,15 @@
 				8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */,
 				8CF3604D1DD0B2EA00C70097 /* CoffeeOrderContext.swift */,
 			);
-			name = "Storyboard Visitor";
+			name = "Storyboard Visitor Engine";
 			sourceTree = "<group>";
 		};
-		8CF360461DCEAEA700C70097 /* Model */ = {
+		8CF360461DCEAEA700C70097 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8C3DB7F11DD24A2B00EF825B /* ChooseBeverageModel.swift */,
-				8C3DB7EF1DD205D600EF825B /* ChooseSizeModel.swift */,
-				8C11979A1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift */,
-				8CF360441DCEA95F00C70097 /* OrderSummaryModel.swift */,
 				8CF360471DCEAEBF00C70097 /* Entities.swift */,
 			);
-			name = Model;
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +255,7 @@
 				8C10139A1DCEA4AF00D131D4 /* StoryboardViewController.swift in Sources */,
 				8C3DB7F01DD205D600EF825B /* ChooseSizeModel.swift in Sources */,
 				8CF3604C1DD0ACCA00C70097 /* ChooseSizeViewController.swift in Sources */,
-				8C11979B1DD0E88F00CB7761 /* CustomiseOrderSummaryModel.swift in Sources */,
+				8C11979B1DD0E88F00CB7761 /* CustomiseOrderModel.swift in Sources */,
 				8C1197991DD0E21600CB7761 /* CustomiseOrderViewController.swift in Sources */,
 				8C3DB7F21DD24A2B00EF825B /* ChooseBeverageModel.swift in Sources */,
 				8C0EE9A11DCCECFC003ABABE /* SceneDispatchTable.swift in Sources */,
