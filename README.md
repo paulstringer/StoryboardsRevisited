@@ -44,24 +44,19 @@ The first test of the solution is to see if we can change storyboards without im
 
 Try these Storyboard refactorings. After each refactoring run again and note that the application continues to function **without any** code changes:
 
-**Part 1** - Refactor **Choose Size** scene to appear before **Order summary** scene
-
-<img src='Demo-Part1.gif' align="center" border=1>
+**Part 1** - Refactor **Choose Size** scene to appear before **Order summary** scene [[Animated](Demo-Part1.gif)]
 
 1. Open Main.storyboard
 - Delete Segue between scenes *Customise Drink* -> *Choose Size*
 - Control-Drag a push segue from scene *Choose Drink's* Cell -> *Choose Size*
 - Control-Drag a push segue from scene *Choose Size* Cell -> *Order Summary*
 
-**Part 2** - Refactor **Choose Size** scene to precede **Choose Drink** scene
-
-<img src='Demo-Part2.gif' align="center" border=1>
+**Part 2** - Refactor **Choose Size** scene to precede **Choose Drink** scene [[Animated](Demo-Part2.gif)]
 
 1. Control-Drag from Navigation Controller and connect outlet ```rootViewController``` to *Choose Size* scene
 - Control-Drag a push segue from *Choose Size* Cell -> *Drink Size* scene
 - Control-Drag a push segue from *Choose Drink* Cell -> *Order Summary* scene
 
--
 ### To Do
 
 - Explore the limitations of this approach
