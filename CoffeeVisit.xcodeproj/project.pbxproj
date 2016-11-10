@@ -163,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				8C1013981DCEA4AF00D131D4 /* StoryboardViewController.swift */,
-				8C0EE9A01DCCECFC003ABABE /* SceneDispatchTable.swift */,
 				8C1013971DCEA4AF00D131D4 /* StoryboardController.swift */,
+				8C0EE9A01DCCECFC003ABABE /* SceneDispatchTable.swift */,
 				8CF3604D1DD0B2EA00C70097 /* CoffeeOrderContext.swift */,
 			);
 			name = "Storyboard Visitor Engine";
