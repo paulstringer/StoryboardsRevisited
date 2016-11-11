@@ -3,7 +3,7 @@
 
 --
 
-This project is a 'proof of concept' example taken from the talk *Storyboards Revisited*. The project embraces the art of '[metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)' using storyboards. The goal is to do so in a way that adheres to SOLID principles & is compatible with [clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) patterns.
+This project is a 'proof of concept' example taken from the talk *Storyboards Revisited* presented at [Swift Summit](https://www.swiftsummit.com), 2016. The project embraces the art of '[metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)' using storyboards. The goal is to do so in a way that adheres to SOLID principles & is compatible with [clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) patterns.
 
 #### What's the Story?
 
