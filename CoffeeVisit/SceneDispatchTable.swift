@@ -5,7 +5,7 @@
 
 extension StoryboardController {
   
-  func visit(_ scene: ViewController) {
+  func visit(_ scene: RootViewController) {
     // Prepare ViewController
   }
   
@@ -43,7 +43,7 @@ extension StoryboardController {
 
 //Adds Conformance to Destination View Controllers That Require Preparation.
 
-extension ViewController: StoryboardVisitableScene {
+extension RootViewController: StoryboardVisitableScene {
   func accept(visitor: StoryboardController) { visitor.visit(self) }
 }
 
