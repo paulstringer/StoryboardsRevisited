@@ -1,7 +1,5 @@
 # Storyboards Revisited
-**Swift Summit Talk, San Francisco, 2016.**
-
-[Swift Summit Video](https://www.skilled.io/u/swiftsummit/storyboards-revisited)
+**Swift Summit Talk, San Francisco, 2016.** [Video](https://www.skilled.io/u/swiftsummit/storyboards-revisited)
 
 --
 
