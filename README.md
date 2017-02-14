@@ -1,6 +1,8 @@
 # Storyboards Revisited
 **Swift Summit Talk, San Francisco, 2016.**
 
+[Swift Summit Video](https://www.skilled.io/u/swiftsummit/storyboards-revisited)
+
 --
 
 This project is a 'proof of concept' example taken from the talk *Storyboards Revisited* presented at [Swift Summit](https://www.swiftsummit.com), 2016. The project embraces the art of '[metaprogramming](https://en.wikipedia.org/wiki/Metaprogramming)' using storyboards and code that adheres to SOLID principles and is compatible with [clean architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) patterns.
