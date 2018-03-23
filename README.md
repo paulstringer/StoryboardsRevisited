@@ -1,5 +1,5 @@
 # Storyboards Revisited
-**Swift Summit Talk, San Francisco, 2016.** [Watch The Video](https://www.skilled.io/u/swiftsummit/storyboards-revisited)
+[Watch The Video from Swift Summit](https://www.skilled.io/u/swiftsummit/storyboards-revisited)
 
 --
 
@@ -67,4 +67,3 @@ Try these Storyboard refactorings. After each refactoring run again and note tha
 #### Please contribute via PR's + Issues! - This is an ongoing work in progress. 
 
 - [@paulstringer](http://twitter.com/paulstringer)
-
